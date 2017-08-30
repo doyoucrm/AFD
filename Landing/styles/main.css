@@ -1,0 +1,276 @@
+.heroVideo {
+    
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    opacity: 0;
+
+}
+#toggleFullScreen {
+    position: relative;
+    padding-left: 3.5rem;
+}
+.hero-fitness .secondary {
+    background: 0 0;
+    border-color: #FFF;
+    color: #FFF;
+}
+button .playIco::after {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: .65rem;
+    margin-top: .525rem;
+    border-style: solid;
+    border-width: .35rem 0 .35rem .6rem;
+    border-color: transparent transparent transparent #2A93D5;
+    float: left;
+}
+button .playIco {
+    width: 1.75rem;
+    height: 1.75rem;
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    border-radius: 2rem;
+    background: #FFF;
+}
+header>.container {
+    max-width: inherit;
+    margin: 0 1em;
+    padding: 0;
+}
+.container-full {
+ 
+}
+.container-full > .row {
+    display: block;
+}
+.hero-fitness {
+    height: auto;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+ 
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+ 
+    background: url(../images/afd-hero.jpg) top center no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 90vh;
+        /* -webkit-justify-content: center; */
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    background-position: center center;
+    
+    min-height: 30em;
+    background-position: 3%;
+    flex-flow: row wrap;
+    
+}
+.headerLinks-login {
+     display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    white-space: nowrap;
+    float: right;
+    padding-right: 1.4em;
+ }
+
+.mobileLogoCont {
+    -webkit-flex: 0 1 auto;  
+    -ms-flex: 0 1 auto;
+      flex: 0 1 auto;  
+     display: -webkit-flex;  
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+}
+.hero-fitness:after {
+    content: "";
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background: #762B85;
+    background: linear-gradient(315deg,#762B85,#762B85 50%,transparent 30%);
+    opacity: .8;
+}
+
+ .isHome .main-container.hero-container {
+    padding-top: 6.3rem;
+}
+ .loginForm {
+   
+    padding: 2rem 7rem;
+}
+.loginForm input {
+    border-color: #979797;
+ }
+.loginForm input[type=submit] {
+    border-color: transparent;
+}
+.loginForm h1 {
+    font-size: 1.875em;
+    line-height: normal;
+}
+.heroTxt {
+    text-align: left;
+    color: #fff;
+    -webkit-flex-basis: 65%;
+    -ms-flex-preferred-size: 65%;
+    flex-basis: 65%;
+}
+.heroTxt h1 {
+    font-size: 6em;
+    font-weight: 400;
+ }
+.heroTxt > img.eatbreathe {
+    width: 70%;
+    height: auto;
+}
+.heroTxt h1 span {
+    line-height: 80%;
+ }
+.heroTxt .h1-words, .heroTxt .h1-fitness {
+    display: block;
+    color: #fff;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.heroTxt .h1-fitness {
+    color: #FFDC4F;
+}
+.heroTxt .h1-words {
+    padding-bottom: .2em;
+}
+.hero .heroBadge .svgRespCont svg {
+    position: absolute;
+}
+.heroCont {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 5;
+    padding: 4% 5%;
+}
+.heroBadge {
+        -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    align-self: flex-end;
+}
+.leadCopy {
+    font-weight: 300;
+    width: 80%;
+}
+.learn-btn {
+    border: 2px solid #fff;
+    padding: .5em;
+    border-radius: 8px;
+    width: 11em;
+    padding: .5em 1.5em .7em
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+      position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.learn-btn .learn-btnTxt, .learn-btn .learn-playbtn {
+    align-content: center;
+    align-items: center;
+}
+.learn-btn .learn-playbtn {
+    padding-left: .6em;
+}
+.learn-btn .learn-btnTxt {
+    padding: .3em .4em 0 .8em;
+}
+.trademark {
+    font-size: .7em;
+}
+footer {
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1150px)  
+ {
+     .hero-fitness{
+    background-position: 30%;
+
+     }
+     .loginForm {
+        padding: 2rem 4rem;
+    }
+ }
+@media only screen and (max-width: 900px)  
+ {
+     .hero-fitness{
+    background-position: 50%;
+
+     }
+ }
+
+@media only screen and (min-width: 767px)  
+ {
+     .hero-fitness{
+        -webkit-flex-basis: 55%;
+        -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+     }
+     .hero-fitness-login  {
+        -webkit-flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+     }
+     .container-full > .row {
+        display: flex;
+        margin: 1em;
+    }
+     .headerLinks-login {
+         display: none;
+     }
+ }
+@media only screen and (max-width: 500px)
+{
+    .heroBadge {
+        display: none;
+    }
+    .heroTxt {
+        flex-basis: 100%;
+    }
+    .hero-fitness-login {
+        max-width: inherit;
+    }
+    .heroTxt .btn-cont {
+        max-width: 14em;
+    }
+}
