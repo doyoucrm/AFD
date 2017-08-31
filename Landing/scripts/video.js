@@ -67,4 +67,5 @@ if ($('body').hasClass('isHome') || $('body').hasClass('isLanding')) {
     }
 
     homepageVideo();
+    playAfterJump();
 }
