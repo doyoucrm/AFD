@@ -54,5 +54,17 @@ if ($('body').hasClass('isHome') || $('body').hasClass('isLanding')) {
             });
         }
     }
+
+    function playAfterJump() {
+        var query = location.search;
+        var param = null;
+        
+        if (query !== null && typeof(query) !== "undefined" && query.length > 0)
+            param = query.substr(1).split("=");
+
+        if (param !== null && param.length == 2 && param[1] === "play")
+            document.getElementById("toggleFullScreen").click();
+    }
+
     homepageVideo();
 }
