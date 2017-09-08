@@ -40,11 +40,13 @@ header>.container {
     margin: 0 1em;
     padding: 0;
 }
-.container-full {
- 
-}
+
 .container-full > .row {
     display: block;
+}
+.container-full {
+    overflow: hidden;
+    margin-bottom: 1em;
 }
 .hero-fitness {
     height: auto;
@@ -60,17 +62,18 @@ header>.container {
     background: url(https://app.clickdimensions.com/blob/ashcompaniescom-a7oce/files/afd-hero.jpg) top center no-repeat;
     background-size: cover;
     text-align: center;
-    min-height: 90vh;
+    
         /* -webkit-justify-content: center; */
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-justify-content: center;
     background-position: center center;
     
-    min-height: 30em;
+/*    min-height: 30em;*/
     background-position: 3%;
     flex-flow: row wrap;
-    
+    height: 100%;
+    padding-bottom: 2em;
 }
 .headerLinks-login {
      display: -webkit-flex;
@@ -114,6 +117,12 @@ header>.container {
 
  .isHome .main-container.hero-container {
     padding-top: 6.3rem;
+     -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
 }
  .loginForm {
    
@@ -134,15 +143,17 @@ header>.container {
     color: #fff;
     -webkit-flex-basis: 65%;
     -ms-flex-preferred-size: 65%;
-    flex-basis: 65%;
+    flex-basis: 50%;
 }
 .heroTxt h1 {
     font-size: 6em;
     font-weight: 400;
  }
 .heroTxt > img.eatbreathe {
-    width: 70%;
+    width: 80%;
     height: auto;
+    margin-bottom: 1.5em;
+    padding-top: 1em;
 }
 .heroTxt h1 span {
     line-height: 80%;
@@ -177,18 +188,34 @@ header>.container {
     -ms-flex-align: center;
     align-items: center;
     z-index: 5;
-    padding: 4% 5%;
+    padding: 0 5%;
 }
 .heroBadge {
-        -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
+        -webkit-flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
     align-self: flex-end;
+    
 }
 .leadCopy {
     font-weight: 300;
     width: 80%;
 }
+.flexbox-item-grow {
+    flex: 1;
+}
+
+.page-wrapper {
+     width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+ }
 .learn-btn {
     border: 2px solid #fff;
     padding: .5em;
@@ -217,8 +244,11 @@ header>.container {
 .trademark {
     font-size: .7em;
 }
+
+
 footer {
     z-index: 1;
+    display: block;
 }
 
 @media only screen and (max-width: 1150px)  
@@ -231,29 +261,69 @@ footer {
         padding: 2rem 4rem;
     }
  }
+@media only screen and (max-width: 1700px)  
+ {
+     .hero-fitness {
+        background-position: 25%;
+    }
+}
+@media only screen and (max-width: 1400px)  
+ {
+     .hero-fitness {
+        background-position: 40%;
+    }
+}
+@media only screen and (max-width: 1200px)  
+ {
+     .heroBadge {
+         flex: 29% 0 0;
+        }
+      .hero-fitness {
+        background-position: 45%;
+    }
+}
 @media only screen and (max-width: 900px)  
  {
      .hero-fitness{
-    background-position: 50%;
+        background-position: 50%;
 
      }
  }
 
 @media only screen and (min-width: 767px)  
  {
+    
+     .fill-area {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: flex-start; /* align items in Main Axis */
+        align-items: stretch; /* align items in Cross Axis */
+        align-content: stretch; /* Extra space in Cross Axis */
+        min-height: 66vh;
+    }
      .hero-fitness{
         -webkit-flex-basis: 55%;
         -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
+         padding-bottom: 4em;
      }
      .hero-fitness-login  {
         -webkit-flex-basis: 45%;
         -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
+         display: flex;
+         align-items: center;
+         padding-bottom: 2em;
      }
      .container-full > .row {
         display: flex;
         margin: 1em;
+          -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-items: stretch;
+         height: 104%;
     }
      .headerLinks-login {
          display: none;
