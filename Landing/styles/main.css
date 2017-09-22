@@ -1,3 +1,6 @@
+iframe {
+    width: 1200px;
+}
 .heroVideo {
     
     position: absolute;
@@ -216,12 +219,17 @@ header>.container {
 .page-wrapper {
      width: 100%;
     height: 100%;
-
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     
     justify-content: flex-start; /* align items in Main Axis */
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch; /* align items in Cross Axis */
+    -webkit-align-content: stretch;
+    
     align-content: stretch; /* Extra space in Cross Axis */
  }
 .learn-btn {
@@ -310,6 +318,8 @@ footer {
  {
     
      .fill-area {
+         display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         flex-direction: row;
 
@@ -328,12 +338,16 @@ footer {
         -webkit-flex-basis: 55%;
         -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
+         display: -webkit-flex;
+            display: -ms-flexbox;
          display: flex;
          align-items: center;
          padding-bottom: 2em;
      }
      .container-full > .row {
-        display: flex;
+        display: -webkit-flex;
+    display: -ms-flexbox;
+         display: flex;
         margin: 1em;
           -webkit-box-align: stretch;
         -ms-flex-align: stretch;
