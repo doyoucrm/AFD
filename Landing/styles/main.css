@@ -266,54 +266,6 @@ footer {
     z-index: 1;
     display: block;
 }
-@media only screen and (max-width: 1700px)  
- {
-     .hero-fitness {
-        background-position: 40%;
-    }
-}
-@media only screen and (max-width: 1400px)  
- {
-     .hero-fitness {
-        background-position: 50%;
-    }
-}
-@media only screen and (max-width: 1200px)  
- {
-     .heroBadge {
-         flex: 29% 0 0;
-         padding-left: 0;
-        }
-      .hero-fitness {
-        background-position: 45%;
-    }
-}
-@media only screen and (max-width: 1150px)  
- {
-     .hero-fitness{
-    background-position: 36%;
-
-     }
-     .loginForm {
-        padding: 2rem 4rem;
-    }
- }
-@media only screen and (max-width: 1080px)  
- {
-     .hero-fitness{
-    background-position: 54%;
-
-     }
-
- }
-@media only screen and (max-width: 900px)  
- {
-     .hero-fitness{
-        background-position: 60%;
-
-     }
- }
-
 @media only screen and (min-width: 767px)  
  {
     
@@ -359,6 +311,78 @@ footer {
          display: none;
      }
  }
+@media only screen and (max-width: 1700px)  
+ {
+     .hero-fitness {
+        background-position: 57%;
+    }
+}
+@media only screen and (max-width: 1400px)  
+ {
+     .hero-fitness {
+        background-position: 50%;
+    }
+}
+@media only screen and (max-width: 1200px)  
+ {
+     .heroBadge {
+         flex: 29% 0 0;
+         padding-left: 0;
+        }
+      .hero-fitness {
+        background-position: 55%;
+    }
+     hero-fitness {
+        -webkit-flex-basis: 60%;
+        -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+      
+    }
+     .hero-fitness-login {
+         -webkit-flex-basis: 38%;
+        -ms-flex-preferred-size: 38%;
+        flex-basis: 38%;
+         }
+}
+@media only screen and (max-width: 1150px)  
+ {
+     .hero-fitness{
+    background-position: 60%;
+
+     }
+     .loginForm {
+        padding: 2rem 4rem;
+    }
+ }
+@media only screen and (max-width: 1080px)  
+ {
+     .hero-fitness{
+    background-position: 62%;
+
+     }
+     .heroBadge {
+         display: none;
+     }
+     .heroTxt {
+             -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+     }
+     
+     .heroTxt > img.eatbreathe {
+        width: 70%;
+     }
+
+ }
+@media only screen and (max-width: 900px)  
+ {
+     .hero-fitness{
+        background-position: 60%;
+
+     }
+ }
+
+
 @media only screen and (max-width: 768px) {
     .heroBadge {
         display: none;
