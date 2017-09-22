@@ -59,7 +59,7 @@ header>.container {
     -ms-flex-direction: column;
     flex-direction: column;
  
-    background: url(https://app.clickdimensions.com/blob/ashcompaniescom-a7oce/files/afd-hero.jpg) top center no-repeat;
+    background: url(http://files.clickdimensions.com/ashcompaniescom-a7oce/images/afd/landing1/afd-hero_desk.jpg) top center no-repeat;
     background-size: cover;
     text-align: center;
     
@@ -70,10 +70,16 @@ header>.container {
     background-position: center center;
     
 /*    min-height: 30em;*/
-    background-position: 3%;
+    background-position: 50%;
     flex-flow: row wrap;
     height: 100%;
     padding-bottom: 2em;
+}
+@media only screen and (max-width: 500px) {
+    .hero-fitness {
+        background: url(http://files.clickdimensions.com/ashcompaniescom-a7oce/images/afd/landing1/afd-hero_mob.jpg) 84% 0 no-repeat;
+        background-size: cover;
+    }
 }
 .headerLinks-login {
      display: -webkit-flex;
@@ -141,16 +147,24 @@ header>.container {
 .heroTxt {
     text-align: left;
     color: #fff;
-    -webkit-flex-basis: 65%;
-    -ms-flex-preferred-size: 65%;
-    flex-basis: 50%;
+    -webkit-flex-basis: 54%;
+    -ms-flex-preferred-size: 54%;
+    flex-basis: 54%;
+}
+.heroBadge {
+        -webkit-flex-basis: 44%;
+    -ms-flex-preferred-size: 44%;
+    flex-basis: 44%;
+    align-self: flex-end;
+    padding-left: 8em;
+    
 }
 .heroTxt h1 {
     font-size: 6em;
     font-weight: 400;
  }
 .heroTxt > img.eatbreathe {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-bottom: 1.5em;
     padding-top: 1em;
@@ -190,16 +204,10 @@ header>.container {
     z-index: 5;
     padding: 0 5%;
 }
-.heroBadge {
-        -webkit-flex-basis: 20%;
-    -ms-flex-preferred-size: 20%;
-    flex-basis: 20%;
-    align-self: flex-end;
-    
-}
+
 .leadCopy {
     font-weight: 300;
-    width: 80%;
+    width: 100%;
 }
 .flexbox-item-grow {
     flex: 1;
@@ -250,42 +258,50 @@ footer {
     z-index: 1;
     display: block;
 }
-
-@media only screen and (max-width: 1150px)  
- {
-     .hero-fitness{
-    background-position: 30%;
-
-     }
-     .loginForm {
-        padding: 2rem 4rem;
-    }
- }
 @media only screen and (max-width: 1700px)  
  {
      .hero-fitness {
-        background-position: 25%;
+        background-position: 40%;
     }
 }
 @media only screen and (max-width: 1400px)  
  {
      .hero-fitness {
-        background-position: 40%;
+        background-position: 50%;
     }
 }
 @media only screen and (max-width: 1200px)  
  {
      .heroBadge {
          flex: 29% 0 0;
+         padding-left: 0;
         }
       .hero-fitness {
         background-position: 45%;
     }
 }
+@media only screen and (max-width: 1150px)  
+ {
+     .hero-fitness{
+    background-position: 36%;
+
+     }
+     .loginForm {
+        padding: 2rem 4rem;
+    }
+ }
+@media only screen and (max-width: 1080px)  
+ {
+     .hero-fitness{
+    background-position: 54%;
+
+     }
+
+ }
 @media only screen and (max-width: 900px)  
  {
      .hero-fitness{
-        background-position: 50%;
+        background-position: 60%;
 
      }
  }
@@ -303,15 +319,15 @@ footer {
         min-height: 66vh;
     }
      .hero-fitness{
-        -webkit-flex-basis: 55%;
-        -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-         padding-bottom: 4em;
-     }
-     .hero-fitness-login  {
         -webkit-flex-basis: 45%;
         -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
+         padding-bottom: 4em;
+     }
+     .hero-fitness-login  {
+        -webkit-flex-basis: 55%;
+        -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
          display: flex;
          align-items: center;
          padding-bottom: 2em;
@@ -329,14 +345,25 @@ footer {
          display: none;
      }
  }
-@media only screen and (max-width: 500px)
-{
+@media only screen and (max-width: 768px) {
     .heroBadge {
         display: none;
     }
+    .heroTxt > img.eatbreathe {
+        padding-top: 4em;
+        width: 56%;
+    }
+    
     .heroTxt {
+       -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
+}
+@media only screen and (max-width: 500px)
+{
+    
+    
     .hero-fitness-login {
         max-width: inherit;
     }
