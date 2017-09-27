@@ -425,3 +425,49 @@ footer {
         flex-basis: 45vw;
     }
 }
+
+
+/* survey styles */
+.is-home header.survey-header, .isHome header.survey-header, header.survey-header {
+    background-color: #6a2c91;
+    position: relative;
+    padding: 2.3em 3em;
+}
+
+header.survey-header:after {
+    content: "";
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background: #762B85;
+    background: linear-gradient(315deg,#00aae7,#00aae7 50%,transparent 30%);
+    opacity: .8;
+}
+header.survey-header .logo a svg {
+    max-height: 6em;
+    max-width: 13em;
+}
+footer.survey-footer {
+        background-color: #00aae7;
+    }
+
+
+@media only screen and (max-width: 767px) {
+    .is-home header.survey-header, .isHome header.survey-header, header.survey-header  {
+        opacity: 1;
+        z-index: auto;
+        width: 100%;
+        height: auto;
+    }
+    header.survey-header .logo {
+        display: block;
+    }
+    
+}
+.isHome .main-container.survey-container {
+    padding-top: 0;
+    
+}
