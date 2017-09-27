@@ -12,6 +12,7 @@ iframe {
 #toggleFullScreen {
     position: relative;
     padding-left: 3.5rem;
+    text-align: left;
 }
 .hero-fitness .secondary {
     background: 0 0;
@@ -407,5 +408,20 @@ footer {
     }
     .heroTxt .btn-cont {
         max-width: 14em;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    .hero-fitness-login {
+        flex-basis: 40vw;
+        height: 50vw;
+    }
+    .hero-fitness {
+        flex-basis: 60vw;
+        height: 50vw;
+    }
+    .heroCont {
+        padding-bottom: 4em;
+        flex-basis: 45vw;
     }
 }
