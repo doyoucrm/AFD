@@ -50,33 +50,18 @@ header>.container {
 }
 .container-full {
     overflow: hidden;
-    margin-bottom: 1em;
+
 }
 .hero-fitness {
     height: auto;
     position: relative;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
- 
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
- 
+    
+  background-position: 50%;
+    
     background: url(http://files.clickdimensions.com/ashcompaniescom-a7oce/images/afd/landing1/afd-hero_desk.jpg) top center no-repeat;
     background-size: cover;
     text-align: center;
-    
-        /* -webkit-justify-content: center; */
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-justify-content: center;
-    background-position: center center;
-    
-/*    min-height: 30em;*/
-    background-position: 50%;
-    flex-flow: row wrap;
-    height: 100%;
+   
     padding-bottom: 2em;
 }
 @media only screen and (max-width: 500px) {
@@ -127,12 +112,7 @@ header>.container {
 
  .isHome .main-container.hero-container {
     padding-top: 6.3rem;
-     -webkit-flex-grow: 1;
-    flex-grow: 1;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
-    -webkit-flex-basis: auto;
-    flex-basis: auto;
+   
 }
  .loginForm {
    
@@ -191,20 +171,7 @@ header>.container {
     position: absolute;
 }
 .heroCont {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     position: relative;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
     z-index: 5;
     padding: 0 5%;
 }
@@ -269,7 +236,50 @@ footer {
 }
 @media only screen and (min-width: 767px)  
  {
-    
+    .isHome .main-container.hero-container {
+        
+         -webkit-flex-grow: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 0;
+        flex-shrink: 0;
+        -webkit-flex-basis: auto;
+        flex-basis: auto;
+    }
+     .heroCont {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+     }
+     .hero-fitness {
+         display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+            /* -webkit-justify-content: center; */
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        background-position: center center;
+
+    /*    min-height: 30em;*/
+
+        flex-flow: row wrap;
+        height: 100%;
+     }
+     
      .fill-area {
          display: -webkit-flex;
         display: -ms-flexbox;
@@ -280,6 +290,7 @@ footer {
         align-items: stretch; /* align items in Cross Axis */
         align-content: stretch; /* Extra space in Cross Axis */
         min-height: 66vh;
+         margin: 1em;
     }
      .hero-fitness{
         -webkit-flex-basis: 45%;
@@ -320,9 +331,24 @@ footer {
 }
 @media only screen and (max-width: 1400px)  
  {
-     .hero-fitness {
-        background-position: 50%;
+/*
+      .loginForm {
+        padding: 2rem 5rem 2rem 7rem;
     }
+*/
+     .hero-fitness {
+         background-position: 50%;
+         
+        -webkit-flex-basis: 54%;
+        -ms-flex-preferred-size: 54%;
+        flex-basis: 54%;
+      
+    }
+     .hero-fitness-login {
+         -webkit-flex-basis: 44%;
+        -ms-flex-preferred-size: 44%;
+        flex-basis: 44%;
+         }
 }
 @media only screen and (max-width: 1200px)  
  {
@@ -333,17 +359,19 @@ footer {
       .hero-fitness {
         background-position: 55%;
     }
-     hero-fitness {
-        -webkit-flex-basis: 60%;
-        -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
+ 
+     .hero-fitness {
+        -webkit-flex-basis: 55%;
+        -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
       
     }
      .hero-fitness-login {
-         -webkit-flex-basis: 38%;
-        -ms-flex-preferred-size: 38%;
-        flex-basis: 38%;
+         -webkit-flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
          }
+ 
 }
 @media only screen and (max-width: 1150px)  
  {
@@ -365,9 +393,9 @@ footer {
          display: none;
      }
      .heroTxt {
-             -webkit-flex-basis: 100%;
-            -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+         -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
      }
      
      .heroTxt > img.eatbreathe {
@@ -394,9 +422,7 @@ footer {
     }
     
     .heroTxt {
-       -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+      display: block;
     }
 }
 @media only screen and (max-width: 500px)
@@ -414,19 +440,23 @@ footer {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
     .hero-fitness-login {
         flex-basis: 40vw;
-        height: 50vw;
+        min-height: 50vw;
     }
     .hero-fitness {
         flex-basis: 60vw;
-        height: 50vw;
+        min-height: 60vw;
     }
     .heroCont {
         padding-bottom: 4em;
         flex-basis: 45vw;
     }
+    
 }
-
-
+@media only screen and (max-width: 768px) {
+    .hero-fitness-login {
+        height: auto;
+    }
+}
 /* survey styles */
 .is-home header.survey-header, .isHome header.survey-header, header.survey-header {
     background-color: #6a2c91;
@@ -464,6 +494,12 @@ footer.survey-footer {
     }
     header.survey-header .logo {
         display: block;
+    }
+    .heroCont {
+        height: auto;
+    }
+    .hero-fitness {
+        height: auto;
     }
     
 }
