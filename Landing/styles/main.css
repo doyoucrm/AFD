@@ -9,6 +9,10 @@ iframe {
     opacity: 0;
 
 }
+.tagline {
+     padding: 1.4em 0;
+    width: 50%;
+ }
 #toggleFullScreen {
     position: relative;
     padding-left: 3.5rem;
@@ -58,7 +62,7 @@ header>.container {
     
   background-position: 50%;
     
-    background: url(http://files.clickdimensions.com/ashcompaniescom-a7oce/images/afd/landing1/afd-hero_desk.jpg) top center no-repeat;
+    background: url(https://activeandfitdirect.com/Global/images/AFD/background/afd-hero_desk.jpg) top center no-repeat;
     background-size: cover;
     text-align: center;
    
@@ -66,7 +70,7 @@ header>.container {
 }
 @media only screen and (max-width: 500px) {
     .hero-fitness {
-        background: url(http://files.clickdimensions.com/ashcompaniescom-a7oce/images/afd/landing1/afd-hero_mob.jpg) 84% 0 no-repeat;
+        background: url(https://activeandfitdirect.com/Global/images/AFD/background/afd-hero_mob.jpg) 84% 0 no-repeat;
         background-size: cover;
     }
 }
@@ -147,7 +151,7 @@ header>.container {
     font-size: 6em;
     font-weight: 400;
  }
-.heroTxt > img.eatbreathe {
+.heroTxt > .svgRespCont {
     width: 80%;
     height: auto;
     margin-bottom: 1.5em;
@@ -236,7 +240,13 @@ footer {
 }
 @media only screen and (min-width: 767px)  
  {
-    .isHome .main-container.hero-container {
+     .tagline {
+         width: 80%
+     }
+     .heroTxt > .svgRespCont {
+        margin-left: 0;
+     }
+     .isHome .main-container.hero-container {
         
          -webkit-flex-grow: 1;
         flex-grow: 1;
@@ -388,6 +398,9 @@ footer {
  }
 @media only screen and (max-width: 1080px)  
  {
+     .tagline {
+         width: 70%;
+     }
      .hero-fitness{
     background-position: 62%;
 
@@ -401,7 +414,7 @@ footer {
         flex-basis: 100%;
      }
      
-     .heroTxt > img.eatbreathe {
+     .heroTxt > .svgRespCont {
         width: 70%;
      }
 
@@ -416,10 +429,11 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+    
     .heroBadge {
         display: none;
     }
-    .heroTxt > img.eatbreathe {
+    .heroTxt > .svgRespCont {
         padding-top: 4em;
         width: 56%;
     }
@@ -430,8 +444,9 @@ footer {
 }
 @media only screen and (max-width: 500px)
 {
-    
-    
+    .tagline {
+        width: 70%;
+     }
     .hero-fitness-login {
         max-width: inherit;
     }
