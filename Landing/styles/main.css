@@ -148,10 +148,10 @@ header>.container {
     font-weight: 400;
  }
 .heroTxt > img.eatbreathe {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-bottom: 1.5em;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 .heroTxt h1 span {
     line-height: 80%;
