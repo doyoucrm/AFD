@@ -140,7 +140,7 @@ header>.container {
     -ms-flex-preferred-size: 44%;
     flex-basis: 44%;
     align-self: flex-end;
-    padding-left: 8em;
+    padding-left: 3em;
     
 }
 .heroTxt h1 {
@@ -349,6 +349,9 @@ footer {
         -ms-flex-preferred-size: 44%;
         flex-basis: 44%;
          }
+     .heroBadge {
+         padding-left: 5em;
+     }
 }
 @media only screen and (max-width: 1200px)  
  {
