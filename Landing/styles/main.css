@@ -27,21 +27,38 @@ button .playIco::after {
     content: "";
     width: 0;
     height: 0;
-    margin-left: .65rem;
-    margin-top: .525rem;
+    margin-left: .95rem;
+    margin-top: .825rem;
     border-style: solid;
     border-width: .35rem 0 .35rem .6rem;
     border-color: transparent transparent transparent #2A93D5;
     float: left;
 }
 button .playIco {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2.35rem;
+    height: 2.35rem;
     position: absolute;
-    top: .5rem;
-    left: 1rem;
+    top: 1rem;
+    right: 2rem;
     border-radius: 2rem;
     background: #FFF;
+}
+button .wrap-vidText {
+    display: block;
+    padding-right: 2.6em;
+    text-align: center;
+    font-weight: 100;
+}
+button .playV, button .learnMore {
+    display: block;
+}
+button .playV {
+    font-size: 1.2em;
+    
+}
+.learnMore {
+    font-size: .9em;
+    padding-top: .2em;
 }
 header>.container {
     max-width: inherit;
