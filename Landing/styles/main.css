@@ -28,15 +28,15 @@ button .playIco::after {
     width: 0;
     height: 0;
     margin-left: .95rem;
-    margin-top: .825rem;
+    margin-top: .725rem;
     border-style: solid;
     border-width: .35rem 0 .35rem .6rem;
     border-color: transparent transparent transparent #2A93D5;
     float: left;
 }
 button .playIco {
-    width: 2.35rem;
-    height: 2.35rem;
+    width: 2.15rem;
+    height: 2.15rem;
     position: absolute;
     top: 1rem;
     right: 2rem;
@@ -53,11 +53,11 @@ button .playV, button .learnMore {
     display: block;
 }
 button .playV {
-    font-size: 1.2em;
+    font-size: 1.125em;
     
 }
 .learnMore {
-    font-size: .9em;
+    font-size: .8em;
     padding-top: .2em;
 }
 header>.container {
@@ -458,6 +458,9 @@ footer {
     .heroTxt {
       display: block;
     }
+     .heroTxt .btn-cont {
+        max-width: 17em;
+    }
 }
 @media only screen and (max-width: 500px)
 {
@@ -468,7 +471,7 @@ footer {
         max-width: inherit;
     }
     .heroTxt .btn-cont {
-        max-width: 14em;
+        max-width: 17em;
     }
 }
 
