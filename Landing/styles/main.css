@@ -23,11 +23,15 @@ iframe {
     border-color: #FFF;
     color: #FFF;
 }
+button.secondary#toggleFullScreen {
+    padding-left: 2.7em;
+    padding-right: 2.7em;
+}
 button .playIco::after {
     content: "";
     width: 0;
     height: 0;
-    margin-left: .95rem;
+    margin-left: .85rem;
     margin-top: .725rem;
     border-style: solid;
     border-width: .35rem 0 .35rem .6rem;
@@ -43,12 +47,31 @@ button .playIco {
     border-radius: 2rem;
     background: #FFF;
 }
+.buttonWrapper {
+    display: flex;
+}
+.svgPlayWrapper {
+    height: 2.25em;
+    width: 2.25em;
+    display: block;
+}
+.svgPlayWrapper .svgRespCont {
+    display: block;
+}
 button .wrap-vidText {
     display: block;
-    padding-right: 2.6em;
+/*    padding-right: .6em;*/
+    padding-right: 2em;
     text-align: center;
     font-weight: 100;
+    align-content: center;
+    align-self: center;
+    align-items: center;
 }
+/* temp */
+.buttonWrapper .wrap-vidText {
+    padding-right: .6em;
+} 
 button .playV, button .learnMore {
     display: block;
 }
@@ -460,7 +483,7 @@ footer {
       display: block;
     }
      .heroTxt .btn-cont {
-        max-width: 17em;
+        max-width: 20em;
     }
 }
 @media only screen and (max-width: 500px)
@@ -472,7 +495,7 @@ footer {
         max-width: inherit;
     }
     .heroTxt .btn-cont {
-        max-width: 17em;
+        max-width: 20em;
     }
 }
 
