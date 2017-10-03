@@ -324,6 +324,7 @@ footer {
         -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
          padding-bottom: 4em;
+         min-height: 66vh;
      }
      .hero-fitness-login  {
         -webkit-flex-basis: 55%;
