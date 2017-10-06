@@ -180,12 +180,15 @@ header>.container {
     flex-basis: 54%;
 }
 .heroBadge {
-        -webkit-flex-basis: 44%;
+    -webkit-flex-basis: 44%;
     -ms-flex-preferred-size: 44%;
     flex-basis: 44%;
     align-self: flex-end;
-    padding-left: 3em;
+    padding-left: 8em;
     
+}
+.heroBadge.pad-left {
+    padding-left: 18%;
 }
 .heroTxt h1 {
     font-size: 6em;
@@ -403,6 +406,9 @@ footer {
      .heroBadge {
          padding-left: 5em;
      }
+     .heroBadge.pad-left {
+         padding-left: 10%;
+     }
 }
 @media only screen and (max-width: 1200px)  
  {
@@ -413,7 +419,9 @@ footer {
       .hero-fitness {
         background-position: 55%;
     }
- 
+ .heroBadge.pad-left {
+         padding-left: 2%;
+     }
      .hero-fitness {
         -webkit-flex-basis: 55%;
         -ms-flex-preferred-size: 55%;
