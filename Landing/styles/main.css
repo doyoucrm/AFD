@@ -49,6 +49,7 @@ button .playIco {
 }
 .buttonWrapper {
     display: flex;
+    justify-content: center;
 }
 .svgPlayWrapper {
     height: 2.25em;
@@ -518,7 +519,11 @@ footer {
     }
     .heroCont {
         padding-bottom: 4em;
-        flex-basis: 45vw;
+        flex-basis: 53vw;
+    }
+    .heroBadge.pad-left {
+        padding-bottom: 3em;
+        padding-left: 30%;
     }
     
 }
