@@ -519,7 +519,7 @@ footer {
     }
     .hero-fitness {
         flex-basis: 60vw;
-        min-height: 60vw;
+        min-height: 47vw;
     }
     .heroCont {
         padding-bottom: 4em;
@@ -527,7 +527,7 @@ footer {
     }
     .heroBadge.pad-left {
         padding-bottom: 3em;
-        padding-left: 30%;
+        padding-left: 35%;
     }
     
 }
