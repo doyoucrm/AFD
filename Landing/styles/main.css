@@ -284,6 +284,7 @@ footer {
 }
 @media only screen and (min-width: 767px)  
  {
+     
      .tagline {
          width: 80%
      }
@@ -479,7 +480,10 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-    
+    .isHome .main-container.hero-container {
+        padding-top: 5rem;
+
+    }
     .heroBadge {
         display: none;
     }
