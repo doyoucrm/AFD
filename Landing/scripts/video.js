@@ -4,6 +4,18 @@ if ($('body').hasClass('isHome') || $('body').hasClass('isLanding')) {
         var fullScreenButton = document.getElementById('toggleFullScreen');
         var event = document.createEvent('HTMLEvents');
         var inFullScreen = false;
+        // Modernizr will return the prefixed function call, or false if none exists. Firefox uses the 'FullScreen' capitalization.
+        var requestFullscreen = Modernizr.prefixed('requestFullscreen', video) || Modernizr.prefixed('requestFullScreen', video) || Modernizr.prefixed('EnterFullscreen', video);
+        var exitFullscreen = Modernizr.prefixed('exitFullscreen', video) || Modernizr.prefixed('exitFullScreen', video);
+
+        // Hides the video and resets various properties
+        var hideVideo = function() {
+            inFullScreen = false;
+            video.pause();
+            video.currentTime = 0;
+            video.controls = false;
+            video.classList.add('heroVideo');
+        };
 
         fullScreenButton.addEventListener('click', function () {
             // Add controls and unmute when entering fullscreen
@@ -12,18 +24,7 @@ if ($('body').hasClass('isHome') || $('body').hasClass('isLanding')) {
             video.autoplay = true;
             video.play();
             // If fullscreen API is supported...
-            if (Modernizr.fullscreen) {
-                // Enable full screen button (accounting for various vendor prefixes)
-                if (video.requestFullscreen) {
-                    video.requestFullscreen();
-                } else if (video.mozRequestFullScreen) {
-                    video.mozRequestFullScreen();
-                } else if (video.webkitRequestFullscreen) {
-                    video.webkitRequestFullscreen();
-                } else if (video.msRequestFullscreen) {
-                    video.msRequestFullscreen();
-                }
-            }
+            if (requestFullscreen) requestFullscreen();
             //remove class hiding video when in fullscreen
             video.classList.remove('heroVideo');
         }, false);
@@ -38,19 +39,25 @@ if ($('body').hasClass('isHome') || $('body').hasClass('isLanding')) {
                 // Stop video
                 //Add class back that hides video when not in fullscreen
                 if (!isFullScreen) {
-                    inFullScreen = false;
-                    video.pause();
-                    video.currentTime = 0;
-                    video.controls = false;
-                    video.classList.add('heroVideo');
+                    hideVideo();
                 }
             }, false);
+        });
+
+        // Hide the video once it has completed playing
+        video.addEventListener('ended', function() {
+            // Turn off full screen if we previously activated it
+            if (exitFullscreen) {
+                exitFullscreen();
+                hideVideo();
+            }
         });
 
         // If fullscreen API is not supported, take off autoplay when the webkitendfullscreen event fires
         if (!Modernizr.fullscreen) {
             video.addEventListener('webkitendfullscreen', function () {
                 video.autoplay = false;
+                hideVideo();
             });
         }
     }
