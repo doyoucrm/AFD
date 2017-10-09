@@ -108,6 +108,7 @@ header>.container {
     text-align: center;
    
     padding-bottom: 2em;
+    padding-top: 2em;
 }
 @media only screen and (max-width: 500px) {
     .hero-fitness {
@@ -345,7 +346,7 @@ footer {
         align-items: stretch; /* align items in Cross Axis */
         align-content: stretch; /* Extra space in Cross Axis */
         min-height: 66vh;
-         margin: 1em;
+         
     }
      .hero-fitness{
         -webkit-flex-basis: 45%;
@@ -409,7 +410,7 @@ footer {
          padding-left: 5em;
      }
      .heroBadge.pad-left {
-         padding-left: 10%;
+         padding-left: 18%;
      }
 }
 @media only screen and (max-width: 1200px)  
@@ -515,11 +516,11 @@ footer {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
     .hero-fitness-login {
         flex-basis: 40vw;
-        min-height: 50vw;
+        min-height: 100vh;
     }
     .hero-fitness {
         flex-basis: 60vw;
-        min-height: 47vw;
+        min-height: 100vh;
     }
     .heroCont {
         padding-bottom: 4em;
@@ -528,6 +529,9 @@ footer {
     .heroBadge.pad-left {
         padding-bottom: 3em;
         padding-left: 35%;
+    }
+    .tagline {
+        width: 100%;
     }
     
 }
